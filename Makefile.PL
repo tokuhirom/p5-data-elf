@@ -14,7 +14,8 @@ makemaker_args(
             cover_db
         },
     },
-    LIBS => ['-lstdc++'],
+    LIBS => ['-lstdc++ -lelf'],
+    CCFLAGS => '-g',
 );
 
 tests 't/*.t';

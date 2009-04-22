@@ -148,8 +148,8 @@ namespace pl {
         Reference* reference();
         ~Value() {
         }
-    protected:
         SV* val;
+    protected:
         Value() { }
         Value(SV* _v) {
             this->val = _v;
